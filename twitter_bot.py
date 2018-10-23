@@ -1,8 +1,8 @@
 """
 INI: 22/10/2018
 This is a project to make a bot. I'm not sure what I going to do, but
-this is gonna be a Twitter bot. Please, check it on official Twitter bot 
-account: https://twitter.com/MarvinOAndroid1
+this is gonna be a Twitter bot. Please, check the official Twitter's bot 
+account in: https://twitter.com/MarvinOAndroid1
 You're free to use and modify the source code
 
 Author: Ricardo Freitas
