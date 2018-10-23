@@ -1,6 +1,3 @@
-/*
-This files make an executable file to execute the Python file, current_time.py
-*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -22,7 +19,7 @@ int main()
         time_str[strlen(time_str) - 1] = '\0';
         min = minute(time_str);
         printf(".");
-        pause(60);
+        pause(1200);
         pin = fopen("time.txt", "w");
         fputs(time_str, pin);
         fclose(pin);
