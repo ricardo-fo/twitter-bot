@@ -35,7 +35,6 @@ def main_loop(ap):
 			print("Unrecognized choice!")
 		return True
 
-
 #Follow every followers back
 def follow_back(ap):
 	for follower in tweepy.Cursor(ap.followers).items():
