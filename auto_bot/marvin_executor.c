@@ -1,3 +1,7 @@
+/*
+This files make an executable file to execute the Python file, current_time.py
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
