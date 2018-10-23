@@ -15,9 +15,8 @@ import csv
 
 #Main loop
 def main_loop(ap):
-	follow_back(ap)
 	post_tweet(ap)
-
+	follow_back(ap)
 
 #Follow every followers back
 def follow_back(ap):
@@ -26,8 +25,9 @@ def follow_back(ap):
 			print("Following: @", follower.screen_name)
 			continue
 		follower.follow()
-		ap.update_status("Hello, my new friend @" + follower.screen_name)
-		print("New friend: @" + follower.screen_name)
+		msg = "Hello, my new friend @" + str(follower.screen_name)
+		ap.update_status(msg)
+		print("New friend: @", str(follower.screen_name))
 
 #Post a tweet
 def post_tweet(ap):
