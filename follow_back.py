@@ -6,6 +6,7 @@ from secret_keys import *
 from wiki_random import *
 from random import seed
 from random import randint
+from time import sleep
 import tweepy
 import time
 import csv
@@ -86,4 +87,12 @@ auth.set_access_token(access_token, access_secret_token)
 api = tweepy.API(auth)
 
 seed()
-add_followers(api)
+while True:
+	try:
+		add_followers(api)
+	except tweepy.TweepError:
+		print("Sleeping for 15 minutes. . .\n")
+		time.sleep(60*15)
+		continue
+	except KeyboardInterrupt:
+		break
